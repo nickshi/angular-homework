@@ -47,4 +47,5 @@ For Angular Project:
 3. NAVIGATE TO LOCALHOST:4000/
 
 For Other Project:
+
 Open the folder and click .html file
