@@ -1,0 +1,17 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+Name:
+<input name="searchText" placeholder="search by first and last name" #newsearchText>
+<button (click)="search(newsearchText)">Search</button>
+<div>
+{{searchResult}}
+</div>
+</div>
+<ul>
+  <li *ngFor="let name of nameList()">
+  {{ name }}
+  </li>
+</ul>
+
+
+
