@@ -40,6 +40,11 @@ https://github.com/nickshi/angular-homework/edit/master/hw2
   Everything is working perect!
 
 #### INSTRUCTIONS TO RUN APPLICATION:
+
+For Angular Project:
 1. NPM INSTALL
 2. GULP SURVE
 3. NAVIGATE TO LOCALHOST:4000/
+
+For Other Project:
+Open the folder and click .html file
