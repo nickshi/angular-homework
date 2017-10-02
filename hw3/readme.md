@@ -1,7 +1,7 @@
 
 Junhua Shi
 
-GITHUB URL : https://github.com/nickshi/angular-homework/edit/master/hw3
+GITHUB URL : https://github.com/nickshi/angular-homework/tree/master/hw3
 
 10/1/2017
 
@@ -15,7 +15,7 @@ COMPLEXITY: 5
 
 EXPECTED GRADE: A,
 
-https://github.com/nickshi/angular-homework/edit/master/hw3
+https://github.com/nickshi/angular-homework/tree/master/hw3
 
 #### DESCRIBE APPLICATION INTENT:
 
@@ -44,5 +44,5 @@ https://github.com/nickshi/angular-homework/edit/master/hw3
 For Angular Project:
 1. NPM INSTALL
 2. NG SERVE
-3. NAVIGATE TO LOCALHOST:4000/
+3. NAVIGATE TO LOCALHOST:4200/
 
