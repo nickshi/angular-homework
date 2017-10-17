@@ -1,0 +1,15 @@
+ul {
+  text-align: center;
+
+}
+li {
+  margin: 2px;
+  display: inline-block;
+  border: 1px solid red;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+}

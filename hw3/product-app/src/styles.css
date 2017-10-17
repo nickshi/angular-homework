@@ -1,1 +1,4 @@
 @import './app/vendor/semantic.min.css';
+.selected {
+  background-color: red !important;
+}
