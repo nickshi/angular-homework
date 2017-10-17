@@ -1,28 +1,45 @@
-# AnimalKingdom
+Junhua Shi
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.2.
+https://github.com/nickshi/angular-homework/tree/master/hw5
 
-## Development server
+10/17/2017
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+CSC 436
 
-## Code scaffolding
+HOMEWORK: #5
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+COMPLEXITY: 7
 
-## Build
+[ROUGH ESTIMATE] 8 hrs
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+EXPECTED GRADE: A,
 
-## Running unit tests
+https://github.com/nickshi/angular-homework/tree/master/hw5
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+DESCRIBE APPLICATION INTENT:
 
-## Running end-to-end tests
+animal-kingdom homework teach me how to use css and some directives like ngClass, ngFor in angular.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
+BRIEFLY DESCRIBE WHAT THE APPLICATION DOES:
 
-## Further help
+The Applications are working just like what the homework is described.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+BRIEFLY DESCRIBE ANY BOTTLENECKS:
+
+The bottlenecks is that CSS is complicated for me and is not easy to handle it.
+
+BRIEFLY DESCRIBE ADDED FEATURES BEYOND ASSIGNMENT
+
+No Add-on
+
+IF SOMETHING DOES NOT WORK EXPLAIN THE ISSUE
+
+Everything is working perect!
+
+INSTRUCTIONS TO RUN APPLICATION:
+
+For Angular Project:
+
+NPM INSTALL
+NG SERVE
+NAVIGATE TO LOCALHOST:4200/
