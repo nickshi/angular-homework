@@ -1,8 +1,8 @@
 Junhua Shi
 
-https://github.com/nickshi/angular-homework/tree/master/hw5
+https://github.com/nickshi/angular-homework/tree/master/hw6
 
-10/17/2017
+10/23/2017
 
 CSC 436
 
@@ -14,7 +14,7 @@ COMPLEXITY: 7
 
 EXPECTED GRADE: A,
 
-https://github.com/nickshi/angular-homework/tree/master/hw5
+https://github.com/nickshi/angular-homework/tree/master/hw6
 
 DESCRIBE APPLICATION INTENT:
 
