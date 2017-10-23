@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { WikipediaSearch } from '../wikipedia-search.service';
-import { SearchItem } from '../search-item.model';
+import { WikipediaSearch } from '../../services/wikipedia-search.service';
+import { SearchItem } from '../../models/search-item.model';
 @Component({
   selector: 'app-search-history',
   templateUrl: './search-history.component.html',

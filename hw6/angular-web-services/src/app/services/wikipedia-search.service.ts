@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
-import { SearchItem } from './search-item.model';
-import { SEARCHITEMS } from './search.data';
+import { SearchItem } from '../models/search-item.model';
+import { SEARCHITEMS } from '../search.data';
 import 'rxjs/RX';
 
 @Injectable()

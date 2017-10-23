@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { WikipediaSearch } from "../wikipedia-search.service";
-import { GiphyService } from "../giphy-service.service";
-import { SearchItem } from "../search-item.model";
+import { WikipediaSearch } from "../../services/wikipedia-search.service";
+import { GiphyService } from "../../services/giphy-service.service";
+import { SearchItem } from "../../models/search-item.model";
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
