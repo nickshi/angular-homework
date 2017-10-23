@@ -1,0 +1,12 @@
+history <a routerLink="" routerLinkActive="active">Back</a>
+  <ul>
+    <li *ngFor="let item of searchItems">{{item.createdDate | date:"MM/dd/yy hh:mm:ss"}}
+          <ul>
+          <li *ngFor="let sit of item.content">{{sit}}
+            {{sit}}
+          </li>
+          </ul>
+    </li>
+  </ul>
+
+
