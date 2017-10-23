@@ -4,19 +4,8 @@
   <a routerLink="/search-history" routerLinkActive="active">Search History</a>
 </nav>
 
-<div style="text-align:center">
-Search <input type="text" [(ngModel)]="searchText">
-<button (click)="btnSearch()">Search</button>
-<button (click)="btnGiphyApiSearch()">Giphy Search</button>
 
-</div>
 <router-outlet></router-outlet>
-<ul>
-  <li *ngFor="let item of searchResult">{{item}}</li>
-</ul>
 
-<ul>
-  <li *ngFor="let item of searchImageItems"><img src="{{item}}"></li>
-</ul>
 
 
