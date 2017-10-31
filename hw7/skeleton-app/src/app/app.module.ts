@@ -8,23 +8,25 @@ import { ChatboxComponent } from './components/chatbox/chatbox.component';
 import { DoubleButtonsComponent } from './components/double-buttons/double-buttons.component';
 import { ChatService } from './services/chat-service.service';
 import { FormsModule } from '@angular/forms';
+import { LoginPageComponent } from './containers/login-page/login-page.component';
+import { ChatBoxPageComponent } from './containers/chat-box-page/chat-box-page.component';
 
 const appRoutes: Routes = [
   { 
     path: 'login', 
-    component: LoginComponent
+    component: LoginPageComponent
   },
   { 
     path: '',
-    component: LoginComponent
+    component: LoginPageComponent
   },
   { 
     path: 'chatbox',
-    component: ChatboxComponent
+    component: ChatBoxPageComponent
   },
   {
     path: '**',
-    component: LoginComponent
+    component: LoginPageComponent
   }
 ];
 @NgModule({
@@ -33,7 +35,9 @@ const appRoutes: Routes = [
     NavbarComponent,
     LoginComponent,
     ChatboxComponent,
-    DoubleButtonsComponent
+    DoubleButtonsComponent,
+    LoginPageComponent,
+    ChatBoxPageComponent
   ],
   imports: [
     BrowserModule,

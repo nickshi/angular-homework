@@ -14,7 +14,5 @@ export class AppComponent {
     this.messages = _chatService.getMessages();
   }
 
-  sendMessage(content: string) {
-    this._chatService.addMessage("nick", "bob", content);
-  }
+
 }

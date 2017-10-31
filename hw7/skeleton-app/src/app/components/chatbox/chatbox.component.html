@@ -7,8 +7,8 @@
     <textarea placeholder="Input here" style="width: 100%" [(ngModel)] = 'messageContent'></textarea>
   </div>
   <div>
-    <button (click) = "sendMessage($event)"class="ui positive button">Send</button>
-    <button class="ui negative button">Close</button>
+    <button (click) = "sendMessage($event)" class="ui positive button">Send</button>
+    <button (click) = "closeBox($event)" class="ui negative button">Close</button>
   </div>
 </div>
 

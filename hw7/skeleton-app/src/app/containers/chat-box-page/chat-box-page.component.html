@@ -1,0 +1,8 @@
+<div style="margin-top: 40px">
+  <app-chatbox 
+  [messages] = 'messages' 
+  (messageSend)="sendMessage($event)"
+  (boxClosed) = "closeBox()"
+  ></app-chatbox>
+</div>
+
