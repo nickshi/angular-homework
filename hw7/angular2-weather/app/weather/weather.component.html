@@ -1,0 +1,122 @@
+<div class="hero">
+	<div class="container">
+		<form action="#" class="find-location">		
+			<input #term (keyup)="search(term.value)" type="text" placeholder="Find your location...">
+			<!-- <input type="submit" value="Find"> -->
+		</form>		
+	</div>	
+</div>
+
+
+<!-- <div *ngIf="items">{{items | json}}</div> -->
+<div>
+<!-- hello
+{{ items.query?.results?.channel?.location?.city }}
+{{ items.query?.results?.channel?.location?.country }} -->
+</div>
+
+<!-- <div>{{ items.query?.results?.channel?.item?.condition?.temp }}</div> -->
+<!-- query.results.channel.item.condition.temp -->
+<!-- query.results.channel.language -->
+<!-- 
+ <div *ngFor="let item of items | async">
+	{{item | json}}	
+	<h1>test</h1>
+</div> --> 
+
+<div class="forecast-table">
+	<div class="container" *ngIf="isVisible">
+		<div class="forecast-container">
+			<div class="today forecast">
+				<div class="forecast-header">
+					<div class="day">{{ items.query?.results?.channel?.item?.condition?.date.substring(0, 3)}}</div>
+					<div class="date">{{ items.query?.results?.channel?.item?.condition?.date.substring(5, 11)}}</div>
+				</div> <!-- .forecast-header -->
+				<div class="forecast-content">
+					<div class="location">{{ items.query?.results?.channel?.location?.city }}, {{ items.query?.results?.channel?.location?.country }}</div>
+					<div class="degree">
+						<div class="num">{{ items.query?.results?.channel?.item?.condition?.temp }}<sup>o</sup>F</div>
+						<div class="forecast-icon">
+							<img src="http://l.yimg.com/a/i/us/we/52/{{ items.query?.results?.channel?.item?.condition?.code}}.gif" alt="" width=90>
+						</div>	
+					</div>
+					<span><img src="assets/images/icon-umberella.png" alt="">{{items.query?.results?.channel?.wind?.chill}}%</span>
+					<span><img src="assets/images/icon-wind.png" alt="">{{items.query?.results?.channel?.wind?.speed}}km/h</span>
+					<span><img src="assets/images/icon-compass.png" alt="">{{items.query?.results?.channel?.wind?.direction}}</span>
+				</div>
+			</div>
+			<div class="forecast">
+				<div class="forecast-header">
+					<div class="day">{{ items.query?.results?.channel?.item?.forecast[1]?.day }}</div>
+				</div> <!-- .forecast-header -->
+				<div class="forecast-content">
+					<div class="forecast-icon">
+						<img src="http://l.yimg.com/a/i/us/we/52/{{ items.query?.results?.channel?.item?.forecast[1]?.code }}.gif" alt="" width=48>
+					</div>
+					<div class="degree">{{ items.query?.results?.channel?.item?.forecast[1]?.high }}<sup>o</sup>C</div>
+					<small>{{ items.query?.results?.channel?.item?.forecast[1]?.low }}<sup>o</sup></small>
+				</div>
+			</div>
+			<div class="forecast">
+				<div class="forecast-header">
+					<div class="day">{{ items.query?.results?.channel?.item?.forecast[2]?.day }}</div>
+				</div> <!-- .forecast-header -->
+				<div class="forecast-content">
+					<div class="forecast-icon">
+						<img src="http://l.yimg.com/a/i/us/we/52/{{ items.query?.results?.channel?.item?.forecast[2]?.code }}.gif" alt="" width=48>
+					</div>
+					<div class="degree">{{ items.query?.results?.channel?.item?.forecast[2]?.high }}<sup>o</sup>C</div>
+					<small>{{ items.query?.results?.channel?.item?.forecast[2]?.low }}<sup>o</sup></small>
+				</div>
+			</div>
+			<div class="forecast">
+				<div class="forecast-header">
+					<div class="day">{{ items.query?.results?.channel?.item?.forecast[3]?.day }}</div>
+				</div> <!-- .forecast-header -->
+				<div class="forecast-content">
+					<div class="forecast-icon">
+						<img src="http://l.yimg.com/a/i/us/we/52/{{ items.query?.results?.channel?.item?.forecast[3]?.code }}.gif" alt="" width=48>
+					</div>
+					<div class="degree">{{ items.query?.results?.channel?.item?.forecast[3]?.high }}<sup>o</sup>C</div>
+					<small>{{ items.query?.results?.channel?.item?.forecast[3]?.low }}<sup>o</sup></small>
+				</div>
+			</div>
+			<div class="forecast">
+				<div class="forecast-header">
+					<div class="day">{{ items.query?.results?.channel?.item?.forecast[4]?.day }}</div>
+				</div> <!-- .forecast-header -->
+				<div class="forecast-content">
+					<div class="forecast-icon">
+						<img src="http://l.yimg.com/a/i/us/we/52/{{ items.query?.results?.channel?.item?.forecast[4]?.code }}.gif" alt="" width=48>
+					</div>
+					<div class="degree">{{ items.query?.results?.channel?.item?.forecast[4]?.high }}<sup>o</sup>C</div>
+					<small>{{ items.query?.results?.channel?.item?.forecast[4]?.low }}<sup>o</sup></small>
+				</div>
+			</div>
+			<div class="forecast">
+				<div class="forecast-header">
+					<div class="day">{{ items.query?.results?.channel?.item?.forecast[5]?.day }}</div>
+				</div> <!-- .forecast-header -->
+				<div class="forecast-content">
+					<div class="forecast-icon">
+						<img src="http://l.yimg.com/a/i/us/we/52/{{ items.query?.results?.channel?.item?.forecast[5]?.code }}.gif" alt="" width=48>
+					</div>
+					<div class="degree">{{ items.query?.results?.channel?.item?.forecast[5]?.high }}<sup>o</sup>C</div>
+					<small>{{ items.query?.results?.channel?.item?.forecast[5]?.low }}<sup>o</sup></small>
+				</div>
+			</div>
+			<div class="forecast">
+				<div class="forecast-header">
+					<div class="day">{{ items.query?.results?.channel?.item?.forecast[6]?.day }}</div>
+				</div> <!-- .forecast-header -->
+				<div class="forecast-content">
+					<div class="forecast-icon">
+						<img src="http://l.yimg.com/a/i/us/we/52/{{ items.query?.results?.channel?.item?.forecast[6]?.code }}.gif" alt="" width=48>
+					</div>
+					<div class="degree">{{ items.query?.results?.channel?.item?.forecast[6]?.high }}<sup>o</sup>C</div>
+					<small>{{ items.query?.results?.channel?.item?.forecast[6]?.low }}<sup>o</sup></small>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
