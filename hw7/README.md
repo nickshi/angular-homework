@@ -1,6 +1,6 @@
 Junhua Shi
 
-https://github.com/nickshi/angular-homework/tree/master/hw6
+https://github.com/nickshi/angular-homework/tree/master/hw7
 
 10/31/2017
 
