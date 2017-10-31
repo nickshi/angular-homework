@@ -18,7 +18,7 @@ https://github.com/nickshi/angular-homework/tree/master/hw7
 
 DESCRIBE APPLICATION INTENT:
 
-animal-kingdom homework teach me how to use css and some directives like ngClass, ngFor in angular.
+skeleton homework teach me how to reuse components in angular.
 
 BRIEFLY DESCRIBE WHAT THE APPLICATION DOES:
 
