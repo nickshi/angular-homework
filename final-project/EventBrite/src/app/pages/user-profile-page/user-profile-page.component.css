@@ -1,0 +1,13 @@
+.card-img-left {
+  border-bottom-left-radius: calc(.25rem - 1px);
+  border-top-left-radius: calc(.25rem - 1px);
+  float: left;
+  padding-right: 1em;
+  margin-bottom: -1.25em;
+}
+
+.event-card {
+  border-color: gray;
+  border-style: solid;
+  border-width: 1px;
+}

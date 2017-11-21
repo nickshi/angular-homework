@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="card text-center">
+  <div class="card-header">
+    {{movie.title}}
+  </div>
+  <div class="card-body">
+    <img src="{{movie.poster}}">
+    <h4 class="card-title">{{movie.title}}</h4>
+    <p class="card-text">{{movie.plot}}</p>
+    <button (click)="goBack()" class="btn btn-primary">Back</button>
+  </div>
+  <div class="card-footer text-muted">
+    {{movie.year}}
+  </div>
+</div>
+</div>

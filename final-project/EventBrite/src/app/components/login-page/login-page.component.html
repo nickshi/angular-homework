@@ -1,0 +1,31 @@
+<div class="container">
+<div align="center"><span class="text-warning" style="color: orange; font-size: 60px">LOGIN</span></div>
+  <form (ngSubmit)="onSubmit()" [formGroup] = "form" #formDir="ngForm">
+    <div class="form-group">
+      <label for="email">Email address</label>
+      <input formControlName="email" name="email" type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter Email" #email>
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      <div *ngIf="form.hasError('email', 'email') && form.controls.email.touched"
+     class="alert alert-danger">Not a correct email
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input formControlName="password"  name="password" type="password" class="form-control" id="password" placeholder="Password">
+      <div *ngIf="form.controls.email.isinvalid"
+     class="alert alert-danger">Password is too short
+      </div>
+    </div>
+    
+<!--     <div *ngIf="form.hasError('mismatch') && form.get('repassword').touched"
+     class="alert alert-danger">Two input password must be consistent
+      </div> -->
+
+    <button type="submit" [disabled]="form.invalid" class="btn btn-outline-warning">Login</button>
+    <button routerLink="/signup" class="btn btn-outline-warning">Sign up</button>
+  </form>
+
+</div>
+
+
+

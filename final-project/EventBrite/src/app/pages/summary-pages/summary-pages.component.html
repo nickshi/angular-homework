@@ -1,0 +1,15 @@
+<div class="container" style="margin-top:40px">
+
+<h1>Search History</h1>
+  <div class="list-group">
+  <a *ngFor="let movie of historys" class="card" routerLink="/detail/{{movie.imdbID}}" class="list-group-item list-group-item-action flex-column align-items-start">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">{{movie.title}}</h5>
+      <small>{{movie.year}}</small>
+    </div>
+    <p class="mb-1">{{movie.director}}</p>
+    <small>{{movie.rated}}</small>
+    <a routerLink="/detail/{{movie.imdbID}}" class="btn btn-primary" style="float: right">Detail</a>
+  </a>
+</div>
+</div>

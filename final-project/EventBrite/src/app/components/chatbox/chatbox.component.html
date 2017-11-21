@@ -1,0 +1,13 @@
+<div>
+  <div class="ui floating message">
+    <p *ngFor="let message of messages"><b style="font-size: 20px">{{message.sender}}:  </b>{{message.content}}</p>
+  </div>
+
+  <div>
+    <textarea placeholder="Input here" style="width: 100%" [(ngModel)] = 'messageContent' required></textarea>
+  </div>
+  <div>
+    <button (click) = "sendMessage($event)" class="btn btn-primary">Send</button>
+    <button (click) = "closeBox($event)" class="btn btn-warning">Close</button>
+  </div>
+</div>

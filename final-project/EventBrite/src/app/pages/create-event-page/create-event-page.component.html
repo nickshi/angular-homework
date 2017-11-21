@@ -1,0 +1,63 @@
+<div class="container">
+  <div class="center"><h1>EVENT DETAIL</h1></div>
+  <form (ngSubmit)="onSubmit()" [formGroup] = "myForm" #formDir="ngForm">
+    <div class="form-group">
+      <label for="eventName">EVENT TITLE</label>
+      <input formControlName="eventTitle" name = "eventName" type="text" class="form-control" id="eventName" aria-describedby="eventName" placeholder="Give it a short distinct name">
+      <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+      <label for="eventLocation">LOCATION</label>
+      <input formControlName="eventLocation" name = "eventLocation" type="text" class="form-control" id="eventLocation" aria-describedby="eventLocation" placeholder="Search for a venue or address">
+    </div>
+    <div class="form-group">
+      <label for="eventStart">START</label>
+      <owl-date-time formControlName="eventStartDate" name = "eventStartDate" ></owl-date-time>
+      
+    </div>
+    <div class="form-group">
+      <label for="eventEnd">END</label>
+     <!--  <input type="text" class="form-control" id="eventEnd" aria-describedby="eventEnd" placeholder=""> -->
+     <owl-date-time formControlName="eventEndDate" name = "eventEndDate" ></owl-date-time>
+      
+    </div>
+
+    <div class="form-group">
+      <label for="eventImage">Image</label>
+      <input formControlName="eventImage" name = "eventImageUrl" type="text" class="form-control" id="eventImage" aria-describedby="eventImage" placeholder="">
+
+    </div>
+    <div class="form-group">
+      <label for="eventType">Event Type</label>
+      <select id="eventType" class="form-control">
+        <option selected>Auto, Boat & Air</option>
+        <option>Business & Professional</option>
+        <option>Charity & Causes</option>
+        <option>Fashion & Beauty</option>
+        <option>Film, Media & Entertainment</option>
+        <option>Food & Drink</option>
+        <option>Government & Politics</option>
+        <option>Health & Wellness</option>
+        <option>Hobbies & Special Interest</option>
+        <option>Home & Lifestyle</option>
+        <option>Fashion & Beauty</option>
+        <option>Film, Media & Entertainment</option>
+        <option>Music</option>
+        <option>Sports & Fitness</option>
+        <option>Travel & Outdoor</option>
+        <option>Other</option>
+      </select>
+
+    </div>
+    <div class="form-group">
+      <label for="eventDescription">EVENT DESCRIPTION</label>
+      <textarea formControlName="eventDescription"  name = "eventDescription" type="text" class="form-control" id="eventDescription" aria-describedby="eventDescription" placeholder=""></textarea>
+   
+    </div>
+
+    <button type="submit" [disabled]="myForm.invalid" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+
+

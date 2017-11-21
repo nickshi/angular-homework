@@ -1,0 +1,10 @@
+<div class="card text-center" style="width: 20rem;">
+  <img class="card-img-top" src="{{movie.poster}}" alt="Card image cap">
+  <div class="card-body">
+    <h4 class="card-title">{{movie.title}}</h4>
+    <h6 class="card-subtitle mb-2 text-muted">{{movie.year}}</h6>
+    <p class="card-text">{{movie.director}}</p>
+    <h6 class="card-subtitle mb-2 text-muted">{{movie.plot}}</h6>
+    <button class="btn btn-primary" (click)="addToHistory()">Add</button>
+  </div>
+</div>

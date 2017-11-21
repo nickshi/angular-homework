@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+  <a class="navbar-brand" href="#">Movies</a>
+<!--   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button> -->
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/home" routerLinkActive="active">HOME</a>
+      </li>
+      <li [hidden]="_authService.currentUser() == null" class="nav-item">
+        <a class="nav-link" routerLink="/profile">{{_authService.currentUser() && _authService.currentUser().userName}}</a>
+      </li>
+      <li [hidden]="_authService.currentUser() != null" class="nav-item">
+        <a class="nav-link" routerLink="/login" routerLinkActive="active">SIGN IN</a>
+      </li>
+
+      <li [hidden]="_authService.currentUser() == null" class="nav-item">
+        <a class="nav-link" (click) = "logout()">LOG OUT</a>
+      </li>
+    
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/summary" routerLinkActive="active">SUMMARY</a>
+      </li>
+       <li [hidden]="_authService.currentUser() == null" class="nav-item">
+        <a class="nav-link" routerLink="/chatbox">CHATBOX</a>
+      </li>
+    </ul>
+  </div>
+</nav>

@@ -1,0 +1,17 @@
+<div class="container">
+<div align="center"><span class="text-warning" style="color: orange; font-size: 60px">Edit Profile</span></div>
+  <form (ngSubmit)="onSubmit()" [formGroup] = "form" #formDir="ngForm">
+    <div class="form-group">
+      <label for="userName">UserName</label>
+      <input [(ngModel)] = "userName" formControlName="userName" name="userName" type="text" class="form-control" id="userName" aria-describedby="userNameHelp" placeholder="Enter User Name" email="true">
+    </div>
+    
+<!--     <div *ngIf="form.hasError('mismatch') && form.get('repassword').touched"
+     class="alert alert-danger">Two input password must be consistent
+      </div> -->
+
+    <button type="submit" class="btn btn-outline-warning">Confirm</button>
+    
+  </form>
+
+</div>
