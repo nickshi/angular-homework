@@ -1,29 +1,81 @@
 # Movies
 
-This project is a single web application that you can use to search movie information.
+This project is a single web application you can use to search move information.
+
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+
+### Prerequisites
+
+What things you need to install the software and how to install them
+
+```
+
+```
+
+### Installing
+
+A step by step commands that tell you have to get a development env running
 
 
-## Development server
+```
+npm install
+ng server
+```
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+And navigate to
 
-## Code scaffolding
+```
+http://localhost:4200
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+There is a default user you can use
 
-## Build
+```
+email: shijh302@gmail.com
+password: 1234
+```
+or you can sign up the user by yourself
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
-## Running unit tests
+## Features
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Features I have implemented
 
-## Running end-to-end tests
+### 1.Sign up && Login && Logout
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
 
-## Further help
+### 2.Search Movie from [omdbapi](http://www.omdbapi.com/)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+search movie's information by movie name
+
+### 3.Google Analystic
+
+record user's action 
+
+### 4.Data Summary(Historys)
+
+you can check the history you searched and go to the detail of the movie
+
+### 5.User Profile
+
+you can modify your user name in user profile page
+
+### 6.ChatBox
+
+you can input 'detail:' + 'move name' to get movie detail like
+
+```
+detail:avatar
+```
+
+
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments
+
+* Hat tip to anyone who's code was used
+* Inspiration
+* etc
